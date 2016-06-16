@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body style="background:url(nightly-content-bg.png?d=2013-11-06);">
+<script>
+document.body.addEventListener('keydown', function(evt) {
+  console.log(evt);
+  if (evt.key === 'f') {
+    console.log('Entering full screen!');
+    document.body.requestFullscreen();
+  }
+}, false );
+
+window.addEventListener('load', function() {
+  console.log('Press the f key to enter full screen!');
+});
+</script>
+</body>
+</html>
